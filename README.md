@@ -113,5 +113,5 @@ request otherwise.
 Links
 -----
 
-The FCC - http://www.fcc.gov/
-CDBS - http://transition.fcc.gov/mb/databases/cdbs/
+ - The FCC - http://www.fcc.gov/
+ - CDBS - http://transition.fcc.gov/mb/databases/cdbs/
