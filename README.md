@@ -2,15 +2,15 @@ CLI for the CDBS dataset of FCC
 ===============================
 
 The FCC (Federal Communications Commission) have made several datasets
-available online. One of these datasets are the CDBS (Consolidated
-Public Database System). The dataset is huge and can be downloaded as
-separate data files but importing these into a database is somewhat of
-a challenge since table definitions are not delivered in a standard format
-and the data files come as character delimited text files.
+available online. One of these datasets is the CDBS (Consolidated Public
+Database System). The dataset is huge and can be downloaded as separate data
+files but importing these into a database is somewhat of a challenge since
+table definitions are not delivered in a standard format and the data files
+come as character delimited text files.
 
-To make the data more accessible this tool automates the download and
-extraction process as well as parsing of the data files into database scripts
-containing both table definitions and actual scripts with the data.
+To make the data more accessible this tool automates the download, extracting,
+and parsing of the data files into database scripts containing both table
+definitions and actual scripts with the data.
 
 The scripts have been tested with MySQL. Support for other databases have not
 been examined although the insert scripts are ANSI SQL and should be compatible
@@ -21,9 +21,8 @@ tweaked to support other databases.
 Installation
 ------------
 
-The tool has been implemented in Node so if Node is not available on your
-system please install it from https://nodejs.org/. After Node has been
-installed run
+The tool has been implemented in Node. If Node is not available on your system
+please install it from https://nodejs.org/. After Node has been installed run
 
 ```sh
 $ npm install cdbs
@@ -72,10 +71,10 @@ specific table
 
 SQL scripts are put into the `data/sql` folder. The table definition script is
 named after the table ie. `application.sql` for the application table and the
-insert script is prepended with `-data` ie. `application-data.sql`.
+insert script is appended with `-data` ie. `application-data.sql`.
 
-Please note that no relational references are set between tables. According to
-the FCC all tables with the `application_id` field refers to the application
+Please note that no relational references are creted between tables. According
+to the FCC all tables with the `application_id` field refers to the application
 table but since the data does not seem to be consistent (records with
 non-existing application ids) these constraints can unfortunately not be
 applied.
@@ -106,5 +105,6 @@ Contributing
 ------------
 
 Feel free to contribute with pull requests if things are not working as you
-expected or if you have any improvements. Contact me directly or cc me on the
-issue or pull request since I will probably not notice your request otherwise.
+expected or if you have any improvements or suggestions. Contact me directly or
+cc me on the issue or pull request since I will probably not notice your
+request otherwise.
