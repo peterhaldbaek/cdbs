@@ -1,0 +1,9 @@
+{
+  "folder": "data",
+  "folder_files": "files",
+  "folder_sql": "sql",
+  "baseurl": "http://transition.fcc.gov/ftp/Bureaus/MB/Databases/cdbs/",
+  "datafile": "all-cdbs-files.zip",
+  "readmefile": "_readme.html",
+  "ignored_table": "ownership_other_int_xml_data"
+}

@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var _ = require('lodash');
+
+var init = require('../lib/command/init');
+var list = require('../lib/command/list');
+var parse = require('../lib/command/parse');
+
+var argv = require('yargs')
+  .usage('Usage: $0 <command> [options]')
+  .command('init', 'Downloads and extracts the CDBS data.')
+  .command('list', 'Lists the names of all tables.')
+  .command('parse', 'Parses the data into SQL files. If a table is specified it only parses the data for the specific table.')
+  .describe('t', 'Name of the table to parse. Default is all tables.')
+  .alias('t', 'table')
+  .help('h')
+  .argv;
+
+
+if (_.contains(argv._, 'init')) {
+  // Download and extract data
+  init();
+}
+
+else if (_.contains(argv._, 'parse')) {
+  // Parse data
+  parse(argv.t);
+}
+
+else if (_.contains(argv._, 'list')) {
+  // Parse data
+  list();
+}
