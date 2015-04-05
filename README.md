@@ -108,3 +108,10 @@ Feel free to contribute with pull requests if things are not working as you
 expected or if you have any improvements or suggestions. Contact me directly or
 cc me on the issue or pull request since I will probably not notice your
 request otherwise.
+
+
+Links
+-----
+
+The FCC - http://www.fcc.gov/
+CDBS - http://transition.fcc.gov/mb/databases/cdbs/
