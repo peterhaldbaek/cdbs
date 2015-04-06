@@ -29,8 +29,7 @@ $ npm install cdbs
 ```
 
 This will make `cdbs` available in your current directory. If you want it to be
-available globally run the `npm` command with the global option (you probably
-need to use `sudo` to accomplish this).
+available globally run the `npm` command with the global option.
 
 ```bash
 $ npm install -g cdbs
@@ -91,6 +90,36 @@ Extracting                [==============================================] 100%
 # Creates SQL scripts for the party table
 $ cdbs parse -t party
 party                     [==============================================] 100% 
+```
+
+
+Importing into MySQL
+--------------------
+
+Currently the SQL scripts need to be imported manually into MySQL (or any other
+database for that matter). To do this make sure you have created a user and a
+database for the user.
+
+```bash
+# Log in as root
+$ mysql -u root
+
+# Create the user
+mysql> CREATE USER 'cdbs'@'localhost' IDENTIFIED BY 'cdbs';
+mysql> exit
+
+# Login as new user
+$ mysql -u cdbs -p cdbs
+
+# Create database
+mysql> CREATE DATABASE cdbs;
+mysqk> exit
+
+# Import table (in this case the application table)
+$ mysql -u cdbs cdbs < application.sql
+
+# Import data.
+$ mysql -u cdbs cdbs < application-data.sql
 ```
 
 
