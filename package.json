@@ -1,6 +1,6 @@
 {
   "name": "cdbs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Command-line tool for the CDBS dataset of FCC",
   "bin": "./bin/cdbs",
   "repository": {

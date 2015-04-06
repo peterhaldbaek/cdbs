@@ -24,14 +24,15 @@ Installation
 The tool has been implemented in Node. If Node is not available on your system
 please install it from https://nodejs.org/. After Node has been installed run
 
-```sh
+```bash
 $ npm install cdbs
 ```
 
 This will make `cdbs` available in your current directory. If you want it to be
-available globally run the `npm` command with the global option.
+available globally run the `npm` command with the global option (you probably
+need to use `sudo` to accomplish this).
 
-```sh
+```bash
 $ npm install -g cdbs
 ```
 
@@ -42,9 +43,9 @@ Usage
 For quick help simply call the command with the `-h` option. This will display
 a short summary of the available commands of the tool.
 
-```sh
+```bash
 $ cdbs -h
-Usage: bin/cdbs <command> [options]
+Usage: cdbs <command> [options]
 
 Commands:
   init     Downloads and extracts the CDBS data.                                
@@ -60,7 +61,7 @@ Options:
 First step is to download and extract the CDBS database to your local machine.
 This can be done by calling
 
-```sh
+```bash
 $ cdbs init
 ```
 
@@ -81,7 +82,7 @@ applied.
 
 ### Example
 
-```sh
+```bash
 # Downloads and extracts the CDBS dataset
 $ cdbs init
 Downloading               [==============================================] 100% 
@@ -113,5 +114,5 @@ request otherwise.
 Links
 -----
 
- - The FCC - http://www.fcc.gov/
- - CDBS - http://transition.fcc.gov/mb/databases/cdbs/
+ - The FCC - <http://www.fcc.gov>
+ - CDBS - <http://transition.fcc.gov/mb/databases/cdbs>

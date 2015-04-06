@@ -14,6 +14,8 @@ var argv = require('yargs')
   .describe('t', 'Name of the table to parse. Default is all tables.')
   .alias('t', 'table')
   .help('h')
+  .alias('h', 'help')
+  .demand(1, 'You need to specify one of the commands.')
   .argv;
 
 
