@@ -22,7 +22,7 @@ Installation
 ------------
 
 The tool has been implemented in Node. If Node is not available on your system
-please install it from https://nodejs.org/. After Node has been installed run
+please install it from <https://nodejs.org/>. After Node has been installed run
 
 ```bash
 $ npm install cdbs
@@ -113,7 +113,7 @@ $ mysql -u cdbs -p cdbs
 
 # Create database
 mysql> CREATE DATABASE cdbs;
-mysqk> exit
+mysql> exit
 
 # Import table (in this case the application table)
 $ mysql -u cdbs cdbs < application.sql
