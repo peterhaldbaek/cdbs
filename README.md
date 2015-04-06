@@ -67,7 +67,7 @@ $ cdbs init
 When this has completed (it can take some time) you can create SQL scripts by
 calling the `parse` command. If no table is specified scripts for all tables
 will be created; otherwise the command will only create the SQL script for the
-specific table
+specific table.
 
 SQL scripts are put into the `data/sql` folder. The table definition script is
 named after the table ie. `application.sql` for the application table and the
