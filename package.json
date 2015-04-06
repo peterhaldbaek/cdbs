@@ -1,8 +1,8 @@
 {
   "name": "cdbs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Command-line tool for the CDBS dataset of FCC",
-  "bin": "./bin/cdbs.js",
+  "bin": "./bin/cdbs",
   "repository": {
     "type": "git",
     "url": "https://github.com/peterhaldbaek/cdbs"
