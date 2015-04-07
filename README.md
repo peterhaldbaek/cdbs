@@ -73,7 +73,7 @@ SQL scripts are put into the `data/sql` folder. The table definition script is
 named after the table ie. `application.sql` for the application table and the
 insert script is appended with `-data` ie. `application-data.sql`.
 
-Please note that no relational references are creted between tables. According
+Please note that no relational references are created between tables. According
 to the FCC all tables with the `application_id` field refers to the application
 table but since the data does not seem to be consistent (records with
 non-existing application ids) these constraints can unfortunately not be
