@@ -1,11 +1,14 @@
 {
   "name": "cdbs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Command-line tool for the CDBS dataset of FCC",
   "bin": "./bin/cdbs",
   "repository": {
     "type": "git",
     "url": "https://github.com/peterhaldbaek/cdbs"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "keywords": [
     "cdbs",
@@ -31,7 +34,7 @@
   "dependencies": {
     "cheerio": "0.19.0",
     "decompress-zip": "0.1.0",
-    "delimiter-stream": "1.0.0",
+    "delimiter-stream": "1.0.1",
     "lodash": "3.6.0",
     "pad": "0.0.8",
     "progress": "1.1.8",
@@ -39,5 +42,8 @@
     "q": "1.2.0",
     "request": "2.55.0",
     "yargs": "3.7.0"
+  },
+  "devDependencies": {
+    "chai": "2.3.0"
   }
 }

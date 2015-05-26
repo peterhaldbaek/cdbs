@@ -1,6 +1,8 @@
 CLI for the CDBS dataset of FCC
 ===============================
 
+[![Build Status](https://travis-ci.org/peterhaldbaek/cdbs.svg?branch=master)](https://travis-ci.org/peterhaldbaek/cdbs)
+
 The FCC (Federal Communications Commission) have made several datasets
 available online. One of these datasets is the CDBS (Consolidated Public
 Database System). The dataset is huge and can be downloaded as separate data
