@@ -44,6 +44,7 @@
     "yargs": "3.7.0"
   },
   "devDependencies": {
-    "chai": "2.3.0"
+    "chai": "2.3.0",
+    "mocha": "2.2.5"
   }
 }
