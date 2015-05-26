@@ -26,11 +26,11 @@ describe('data-transform-stream', function() {
       expect(actual).to.equal(expected);
     });
 
-    transformStream.write('123|some text|^|');
-    transformStream.end();
-
     transformStream.on('finish', function() {
       done();
     });
+
+    transformStream.write('123|some text|^|');
+    transformStream.end();
   });
 });
